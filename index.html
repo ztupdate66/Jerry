@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="./assets/w-modal.js" defer></script>
+   <script src="./assets/w-loader.js" defer></script>
+   <script src="./assets/modules.js" defer></script>
+   <script src="./assets/module-b.js" defer></script>
+   <script src="./assets/module-x.js" defer></script>
+   <script src="./assets/module-s.js" defer></script>
+   <script src="./main.js" defer></script>
+   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect Button</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    #connectButton {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #connectButton:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="connectButton" class = connect-button>Connect</button>
+
+  <script>
+    document.getElementById('connectButton').addEventListener('click', () => {
+      // Your connect logic here
+      alert('Connect button clicked');
+    });
+  </script>
+
+</body>
+</html>
